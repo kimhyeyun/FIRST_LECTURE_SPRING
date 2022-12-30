@@ -10,7 +10,7 @@ public class PositiveNumber {
 
     private void validate(int value) {
         if (isNegativeNumber(value)) {
-            throw new IllegalArgumentException("0또는 음수를 전달할 수 없습니다.");
+            throw new IllegalArgumentException("0 또는 음수를 전달할 수 없습니다.");
         }
     }
 
