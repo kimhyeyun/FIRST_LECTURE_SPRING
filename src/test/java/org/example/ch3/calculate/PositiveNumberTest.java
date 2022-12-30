@@ -1,4 +1,4 @@
-package org.example.ch3;
+package org.example.ch3.calculate;
 
 import org.example.ch3.calculate.PositiveNumber;
 import org.junit.jupiter.params.ParameterizedTest;

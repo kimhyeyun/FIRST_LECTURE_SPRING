@@ -1,11 +1,11 @@
-package org.example.ch3;
+package org.example.ch3.password;
 
 import org.passay.CharacterData;
 import org.passay.CharacterRule;
 import org.passay.EnglishCharacterData;
 import org.passay.PasswordGenerator;
 
-public class RandomPasswordGenerator implements org.example.ch3.PasswordGenerator {
+public class RandomPasswordGenerator implements org.example.ch3.password.PasswordGenerator {
 
     public static final String ALLOWED_SPL_CHARACTERS = "!@#$%^&*()_+";
     public static final String ERROR_CODE = "ERRONEOUS_SPECIAL_CHARS";

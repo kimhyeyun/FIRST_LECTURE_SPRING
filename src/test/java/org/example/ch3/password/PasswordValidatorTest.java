@@ -1,6 +1,6 @@
-package org.example.ch3;
+package org.example.ch3.password;
 
-import org.example.ch3.PasswordValidator;
+import org.example.ch3.password.PasswordValidator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
