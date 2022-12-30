@@ -12,7 +12,7 @@ public class GradeCalculator {
     public double calculateGrade() {
         double multipliedCreditAndCourseGrade = 0;
         for (Course course : courses) {
-            multipliedCreditAndCourseGrade += course.getCredit() * course.getGradeToNumber();
+            multipliedCreditAndCourseGrade += course.getMultiplyCreditAndCourseGrade();
         }
 
         int totalCompletedCredit = courses.stream()
@@ -21,4 +21,5 @@ public class GradeCalculator {
 
         return multipliedCreditAndCourseGrade / totalCompletedCredit;
     }
+
 }
