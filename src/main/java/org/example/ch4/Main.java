@@ -1,6 +1,6 @@
 package org.example.ch4;
 
-// GET /calculate?operand1=11&&operator=*&operand2=55
+// GET /calculate?operand1=11&operator=*&operand2=55
 
 import java.io.IOException;
 
