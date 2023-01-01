@@ -1,5 +1,6 @@
 package org.example.ch4;
 
+import org.example.ch4.calculator.ClientRequestHandler;
 import org.example.ch4.calculator.domain.Calculator;
 import org.example.ch4.calculator.domain.PositiveNumber;
 import org.slf4j.Logger;
@@ -29,9 +30,11 @@ public class CustomWebApplicationServer {
             while ((clientSocket = serverSocket.accept()) != null) {
                 logger.info("[CustomerWebApplicationServer] client  connected.");
 
+                new Thread(new ClientRequestHandler(clientSocket)).start();
+
                 /*
                 * Step 1 - 사용자 요청을 메인 Thread가 처리하도록 한다.
-                * */
+                * *//*
 
                 try (InputStream in = clientSocket.getInputStream(); OutputStream out = clientSocket.getOutputStream()) {
                     BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
@@ -53,7 +56,7 @@ public class CustomWebApplicationServer {
                         response.response200Header("application/json", body.length);
                         response.responseBody(body);
                     }
-                }
+                }*/
             }
         }
     }
