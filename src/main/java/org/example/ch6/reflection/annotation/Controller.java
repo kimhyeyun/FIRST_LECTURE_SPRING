@@ -1,4 +1,4 @@
-package org.example.ch6.annotation;
+package org.example.ch6.reflection.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

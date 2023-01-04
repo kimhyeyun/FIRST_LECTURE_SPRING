@@ -1,4 +1,4 @@
-package org.example.ch6.model;
+package org.example.ch6.reflection.model;
 
 import java.util.Objects;
 

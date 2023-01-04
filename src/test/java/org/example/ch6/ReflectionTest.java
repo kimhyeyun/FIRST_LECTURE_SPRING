@@ -1,8 +1,8 @@
 package org.example.ch6;
 
-import org.example.ch6.annotation.Controller;
-import org.example.ch6.annotation.Service;
-import org.example.ch6.model.User;
+import org.example.ch6.reflection.annotation.Controller;
+import org.example.ch6.reflection.annotation.Service;
+import org.example.ch6.reflection.model.User;
 import org.junit.jupiter.api.Test;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
@@ -57,7 +57,7 @@ public class ReflectionTest {
         User user = new User("test", "김혜윤");
         Class<? extends User> userClass2 = user.getClass();
 
-        Class<?> userClass3 = Class.forName("org.example.ch6.model.User");
+        Class<?> userClass3 = Class.forName("org.example.ch6.reflection.model.User");
 
         logger.debug("class: [{}]", userClass);
         logger.debug("class2: [{}]", userClass2);
